@@ -19,6 +19,7 @@
 		44D52EBB2922A2860018F081 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D52EBA2922A2860018F081 /* GoogleService-Info.plist */; };
 		44D52EBE2922A9760018F081 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EBD2922A9760018F081 /* RegisterViewController.swift */; };
 		44D52EC02922A9820018F081 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EBF2922A9820018F081 /* LoginViewController.swift */; };
+		44D52EC22922AC8F0018F081 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EC12922AC8F0018F081 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		44D52EBA2922A2860018F081 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44D52EBD2922A9760018F081 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		44D52EBF2922A9820018F081 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		44D52EC12922AC8F0018F081 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				44D52EAA29229E550018F081 /* LaunchScreen.storyboard */,
 				44D52EAD29229E550018F081 /* Info.plist */,
 				44D52EBA2922A2860018F081 /* GoogleService-Info.plist */,
+				44D52EC12922AC8F0018F081 /* Constants.swift */,
 			);
 			path = "Swift Roulette";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				44D52EA229229E520018F081 /* SceneDelegate.swift in Sources */,
 				44D52EC02922A9820018F081 /* LoginViewController.swift in Sources */,
 				44D52EBE2922A9760018F081 /* RegisterViewController.swift in Sources */,
+				44D52EC22922AC8F0018F081 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
