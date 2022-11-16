@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 import StoreKit
 
 class SettingsViewController: UIViewController {
@@ -22,7 +23,19 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func logoutPressed(_ sender: UIButton) {
-        
+        print("button tapped")
+        do {
+            try Auth.auth().signOut()
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainTabBarController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
+            mainTabBarController.modalPresentationStyle = .fullScreen
+            
+            self.present(mainTabBarController, animated: true, completion: nil)
+            
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
     }
     
     @IBAction func sharePressed(_ sender: UIButton) {

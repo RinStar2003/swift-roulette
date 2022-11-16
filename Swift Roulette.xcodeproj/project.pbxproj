@@ -69,6 +69,18 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		4497FBB9292537480097924A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				443B600A292381A60018EB7D /* Registration */,
+				444534322922E135003A0D98 /* GameViewController.swift */,
+				444534342922E191003A0D98 /* ScoreViewController.swift */,
+				444534362922E1A1003A0D98 /* SettingsViewController.swift */,
+				443B600B2923863F0018EB7D /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		44D52E9329229E510018F081 = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +102,8 @@
 			children = (
 				44D52E9F29229E520018F081 /* AppDelegate.swift */,
 				44D52EA129229E520018F081 /* SceneDelegate.swift */,
+				4497FBB9292537480097924A /* Controllers */,
 				44D52EBC2922A9450018F081 /* Views */,
-				44D52EA529229E520018F081 /* Main.storyboard */,
 				44D52EA829229E550018F081 /* Assets.xcassets */,
 				44D52EAA29229E550018F081 /* LaunchScreen.storyboard */,
 				44D52EAD29229E550018F081 /* Info.plist */,
@@ -104,11 +116,7 @@
 		44D52EBC2922A9450018F081 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				443B600A292381A60018EB7D /* Registration */,
-				444534322922E135003A0D98 /* GameViewController.swift */,
-				444534342922E191003A0D98 /* ScoreViewController.swift */,
-				444534362922E1A1003A0D98 /* SettingsViewController.swift */,
-				443B600B2923863F0018EB7D /* TabBarViewController.swift */,
+				44D52EA529229E520018F081 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
