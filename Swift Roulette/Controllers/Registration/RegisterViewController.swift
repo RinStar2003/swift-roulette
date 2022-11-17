@@ -32,11 +32,13 @@ class RegisterViewController: UIViewController {
     }
     
     func checkUserInfo() {
-        print(Auth.auth().currentUser?.uid)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainTabBarController = storyboard.instantiateViewController(identifier: "mainTab")
-        
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+        if Auth.auth().currentUser != nil {
+            print(Auth.auth().currentUser?.uid)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainTabBarController = storyboard.instantiateViewController(identifier: "mainTab")
+            
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+        }
     }
     
 }

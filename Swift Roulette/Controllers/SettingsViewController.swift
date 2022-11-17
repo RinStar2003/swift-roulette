@@ -41,10 +41,9 @@ class SettingsViewController: UIViewController {
           } else {
               // Account deleted.
               let storyboard = UIStoryboard(name: "Main", bundle: nil)
-              let mainTabBarController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
-              mainTabBarController.modalPresentationStyle = .fullScreen
+              let loginNavController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
               
-              self.present(mainTabBarController, animated: true, completion: nil)
+              (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loginNavController)
               
             }
         }
@@ -55,10 +54,9 @@ class SettingsViewController: UIViewController {
             try Auth.auth().signOut()
 
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainTabBarController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
-            mainTabBarController.modalPresentationStyle = .fullScreen
+            let loginNavController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
             
-            self.present(mainTabBarController, animated: true, completion: nil)
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loginNavController)
             
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
@@ -73,5 +71,4 @@ class SettingsViewController: UIViewController {
         let shareSheetVC = UIActivityViewController(activityItems: [image, url], applicationActivities: nil)
         present(shareSheetVC, animated: true)
     }
-    
 }
