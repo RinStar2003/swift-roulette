@@ -13,7 +13,6 @@
 		444534372922E1A1003A0D98 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444534362922E1A1003A0D98 /* SettingsViewController.swift */; };
 		44D52EA029229E520018F081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52E9F29229E520018F081 /* AppDelegate.swift */; };
 		44D52EA229229E520018F081 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EA129229E520018F081 /* SceneDelegate.swift */; };
-		44D52EA429229E520018F081 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EA329229E520018F081 /* WelcomeViewController.swift */; };
 		44D52EA729229E520018F081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D52EA529229E520018F081 /* Main.storyboard */; };
 		44D52EA929229E550018F081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D52EA829229E550018F081 /* Assets.xcassets */; };
 		44D52EAC29229E550018F081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D52EAA29229E550018F081 /* LaunchScreen.storyboard */; };
@@ -34,7 +33,6 @@
 		44D52E9C29229E520018F081 /* Swift Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D52E9F29229E520018F081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D52EA129229E520018F081 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44D52EA329229E520018F081 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		44D52EA629229E520018F081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44D52EA829229E550018F081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D52EAB29229E550018F081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 		443B600A292381A60018EB7D /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				44D52EA329229E520018F081 /* WelcomeViewController.swift */,
 				44D52EBF2922A9820018F081 /* LoginViewController.swift */,
 				44D52EBD2922A9760018F081 /* RegisterViewController.swift */,
 			);
@@ -202,7 +199,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				444534332922E135003A0D98 /* GameViewController.swift in Sources */,
-				44D52EA429229E520018F081 /* WelcomeViewController.swift in Sources */,
 				44D52EA029229E520018F081 /* AppDelegate.swift in Sources */,
 				44D52EA229229E520018F081 /* SceneDelegate.swift in Sources */,
 				44D52EC02922A9820018F081 /* LoginViewController.swift in Sources */,

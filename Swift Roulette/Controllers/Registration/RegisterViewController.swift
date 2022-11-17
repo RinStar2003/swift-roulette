@@ -25,13 +25,17 @@ class RegisterViewController: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                 } else {
                     // Navigate to the Game Controller
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let mainTabBarController = storyboard.instantiateViewController(identifier: "mainTab")
-                    mainTabBarController.modalPresentationStyle = .fullScreen
-                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
-                    self.present(mainTabBarController, animated: true, completion: nil)
+                    self.checkUserInfo()
                 }
             }
         }
+    }
+    
+    func checkUserInfo() {
+        print(Auth.auth().currentUser?.uid)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainTabBarController = storyboard.instantiateViewController(identifier: "mainTab")
+        
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
     }
 }
