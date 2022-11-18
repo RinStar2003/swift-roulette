@@ -31,7 +31,6 @@ class LoginViewController: UIViewController {
             } else {
                 // Navigate to the Game Controller
                 self!.checkUserInfo()
-                
                 }
             }
         }

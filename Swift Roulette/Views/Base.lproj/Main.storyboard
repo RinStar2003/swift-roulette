@@ -281,10 +281,34 @@
                     <view key="view" contentMode="scaleToFill" id="uk4-8w-qS8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKC-Rz-m4k">
+                                <rect key="frame" x="16" y="59" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdo-4Y-iKw">
+                                <rect key="frame" x="16" y="739" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4eP-9x-9fk"/>
                         <color key="backgroundColor" red="0.08504708856344223" green="0.35130235552787781" blue="0.37198299169540405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lKC-Rz-m4k" firstAttribute="top" secondItem="4eP-9x-9fk" secondAttribute="top" id="Ikk-qH-KsM"/>
+                            <constraint firstItem="Mdo-4Y-iKw" firstAttribute="bottom" secondItem="4eP-9x-9fk" secondAttribute="bottom" id="aka-lK-J61"/>
+                            <constraint firstItem="lKC-Rz-m4k" firstAttribute="leading" secondItem="4eP-9x-9fk" secondAttribute="leading" constant="16" id="gXI-cc-ton"/>
+                            <constraint firstItem="Mdo-4Y-iKw" firstAttribute="leading" secondItem="4eP-9x-9fk" secondAttribute="leading" constant="16" id="pCk-6e-7AH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" image="gamecontroller.fill" catalog="system" id="EHO-wF-c13"/>
+                    <connections>
+                        <outlet property="accountLabel" destination="lKC-Rz-m4k" id="HfK-jf-tbA"/>
+                        <outlet property="scoreLabel" destination="Mdo-4Y-iKw" id="dMF-GV-2Hl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wve-cf-b2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

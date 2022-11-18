@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import Firebase
 
 class GameViewController: UIViewController {
 
+    let defaults = UserDefaults.standard
+    
+    @IBOutlet var accountLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        accountLabel.text = Auth.auth().currentUser?.email
     }
+
 }

@@ -11,6 +11,7 @@
 		444534332922E135003A0D98 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444534322922E135003A0D98 /* GameViewController.swift */; };
 		444534352922E191003A0D98 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444534342922E191003A0D98 /* ScoreViewController.swift */; };
 		444534372922E1A1003A0D98 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444534362922E1A1003A0D98 /* SettingsViewController.swift */; };
+		448C61B12927D418008D7A2E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448C61B02927D418008D7A2E /* Game.swift */; };
 		44D52EA029229E520018F081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52E9F29229E520018F081 /* AppDelegate.swift */; };
 		44D52EA229229E520018F081 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EA129229E520018F081 /* SceneDelegate.swift */; };
 		44D52EA729229E520018F081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D52EA529229E520018F081 /* Main.storyboard */; };
@@ -22,7 +23,7 @@
 		44D52EBB2922A2860018F081 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D52EBA2922A2860018F081 /* GoogleService-Info.plist */; };
 		44D52EBE2922A9760018F081 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EBD2922A9760018F081 /* RegisterViewController.swift */; };
 		44D52EC02922A9820018F081 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EBF2922A9820018F081 /* LoginViewController.swift */; };
-		44D52EC22922AC8F0018F081 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EC12922AC8F0018F081 /* Constants.swift */; };
+		44D52EC22922AC8F0018F081 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D52EC12922AC8F0018F081 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		444534322922E135003A0D98 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		444534342922E191003A0D98 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		444534362922E1A1003A0D98 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		448C61B02927D418008D7A2E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		44D52E9C29229E520018F081 /* Swift Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D52E9F29229E520018F081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D52EA129229E520018F081 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		44D52EBA2922A2860018F081 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44D52EBD2922A9760018F081 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		44D52EBF2922A9820018F081 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		44D52EC12922AC8F0018F081 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		44D52EC12922AC8F0018F081 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,14 @@
 				44D52EBD2922A9760018F081 /* RegisterViewController.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		448C61AF2927D275008D7A2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				448C61B02927D418008D7A2E /* Game.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4497FBB9292537480097924A /* Controllers */ = {
@@ -99,13 +109,14 @@
 			children = (
 				44D52E9F29229E520018F081 /* AppDelegate.swift */,
 				44D52EA129229E520018F081 /* SceneDelegate.swift */,
+				448C61AF2927D275008D7A2E /* Models */,
 				4497FBB9292537480097924A /* Controllers */,
 				44D52EBC2922A9450018F081 /* Views */,
 				44D52EA829229E550018F081 /* Assets.xcassets */,
 				44D52EAA29229E550018F081 /* LaunchScreen.storyboard */,
 				44D52EAD29229E550018F081 /* Info.plist */,
 				44D52EBA2922A2860018F081 /* GoogleService-Info.plist */,
-				44D52EC12922AC8F0018F081 /* Constants.swift */,
+				44D52EC12922AC8F0018F081 /* Service.swift */,
 			);
 			path = "Swift Roulette";
 			sourceTree = "<group>";
@@ -199,11 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				444534332922E135003A0D98 /* GameViewController.swift in Sources */,
+				448C61B12927D418008D7A2E /* Game.swift in Sources */,
 				44D52EA029229E520018F081 /* AppDelegate.swift in Sources */,
 				44D52EA229229E520018F081 /* SceneDelegate.swift in Sources */,
 				44D52EC02922A9820018F081 /* LoginViewController.swift in Sources */,
 				44D52EBE2922A9760018F081 /* RegisterViewController.swift in Sources */,
-				44D52EC22922AC8F0018F081 /* Constants.swift in Sources */,
+				44D52EC22922AC8F0018F081 /* Service.swift in Sources */,
 				444534352922E191003A0D98 /* ScoreViewController.swift in Sources */,
 				443B600C2923863F0018EB7D /* TabBarViewController.swift in Sources */,
 				444534372922E1A1003A0D98 /* SettingsViewController.swift in Sources */,
